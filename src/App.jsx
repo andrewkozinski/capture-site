@@ -37,8 +37,6 @@ function App() {
           inputs[key] = defaultValues[key]
         }
       }
-
-      makeQuery();
     }
   }
 
@@ -51,6 +49,11 @@ function App() {
     let fail_on_status = "400%2C404%2C500-511";
     let url_starter = "https://";
     let fullURL = url_starter + inputs.url;
+  }
+
+  const callAPI = async () => {
+    const response = await fetch(query);
+    const json = await response.json();
   }
 
   return (
