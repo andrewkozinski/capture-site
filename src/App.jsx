@@ -41,6 +41,14 @@ function App() {
 
   }
 
+  const makeQuery = () => {
+    let wait_until = "network_idle";
+    let response_type = "json";
+    let fail_on_status = "400%2C404%2C500-511";
+    let url_starter = "https://";
+    let fullURL = url_starter + inputs.url;
+  }
+
   return (
     <div className="whole-page">
       <h1>Build Your Own Screenshot! 📸</h1>
