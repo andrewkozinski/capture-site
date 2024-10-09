@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 const ACCESS_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 import APIForm from './components/APIForm';
+import Gallery from './components/Gallery';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
   }
 
   const makeQuery = () => {
+    console.log(ACCESS_KEY);
     let wait_until = "network_idle";
     let response_type = "json";
     let fail_on_status = "400%2C404%2C500-511";
@@ -123,6 +125,10 @@ function App() {
       </div>
 
       <br></br>
+
+      <div className="container">
+        <Gallery images={prevImages} />
+      </div>
 
     </div>
   )
