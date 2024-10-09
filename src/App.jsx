@@ -18,7 +18,7 @@ function App() {
 
   const [count, setCount] = useState(0);
   const [currentImage, setCurrentImage] = useState(null);
-
+  const [prevImages, setPrevImages] = useState([]);
 
   const reset = () => {
     setInputs({
@@ -34,12 +34,13 @@ function App() {
   const callAPI = async (query) => {
     const response = await fetch(query);
     const json = await response.json();
-
+    console.log(json);
     if (json.url == null) {
       alert("Oops! Something went wrong with that query, let's try again!")
         }
     else {
       setCurrentImage(json.url);
+      setPrevImages(images => [...images, json.url]);
       reset();
     }
 
