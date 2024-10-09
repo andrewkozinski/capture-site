@@ -37,8 +37,9 @@ function App() {
           inputs[key] = defaultValues[key]
         }
       }
-    }
 
+      makeQuery();
+    }
   }
 
   let query = `https://api.apiflash.com/v1/urltoimage?access_key=${ACCESS_KEY}&url=${fullURL}&format=${inputs.format}&width=${inputs.width}&height=${inputs.height}&no_cookie_banners=${inputs.no_cookie_banners}&no_ads=${inputs.no_ads}&wait_until=${wait_until}&response_type=${response_type}&fail_on_status=${fail_on_status}`;
