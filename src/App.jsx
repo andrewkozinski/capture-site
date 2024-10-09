@@ -31,7 +31,7 @@ function App() {
     });
   }
 
-  const callAPI = async () => {
+  const callAPI = async (query) => {
     const response = await fetch(query);
     const json = await response.json();
 
