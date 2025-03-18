@@ -35,7 +35,7 @@ function App() {
   const callAPI = async (query) => {
     const response = await fetch(query);
     const json = await response.json();
-    console.log(json);
+    //console.log(json);
     if (json.url == null) {
       alert("Oops! Something went wrong with that query, let's try again!")
         }
@@ -48,7 +48,7 @@ function App() {
   }
 
   const makeQuery = () => {
-    console.log(ACCESS_KEY);
+    //console.log(ACCESS_KEY);
     let wait_until = "network_idle";
     let response_type = "json";
     let fail_on_status = "400%2C404%2C500-511";
