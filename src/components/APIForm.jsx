@@ -31,7 +31,7 @@ const APIForm = ({inputs, handleChange, onSubmit}) => {
                         </li>
                     ))}
             </form>
-            <button onClick={onSubmit} className="button">Take that Pic!</button>
+            <button onClick={onSubmit} className="button">Capture Site</button>
         </div>
     );
 
