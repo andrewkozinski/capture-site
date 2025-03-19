@@ -4,11 +4,11 @@ This website allows users to input a website URL, and the site will use the ApiF
 # Program Screenshots
 Capture Image
 
-![What the site looks like)](https://i.imgur.com/P5v2wtJ.png)
-![What the site looks like continued)](https://i.imgur.com/FnIUmLu.png)
+Before Capturing:
+![What the site looks like)](https://i.imgur.com/GSf1I7b.png)
 
 After A Query Has Been Made:
-![Query made](https://i.imgur.com/NrBFD2B.png)
+![Query made](https://i.imgur.com/5DfFrri.png)
 
 ## Features
 - Users can enter a website's URL and capture an image of that site.
